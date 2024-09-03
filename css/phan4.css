@@ -1,0 +1,117 @@
+.library{
+    background-color: #413f3f;
+}
+.Pop-music{
+    background-color: #005b4b;
+}
+.Rock-music{
+    background-color: #8e01f6;
+}
+.Jazz-music{
+    background-color: #608209;
+}
+.Classical{
+    background-color: #1f3365;
+}
+.Hip-hop{
+    background-color: #477d95;
+}
+.Country{
+    background-color: #e51e31;
+}
+.EDM{
+    background-color: #e03300;
+}
+.right>h1{
+    padding: 0 0 10px 10px;
+    font-size: 40px;
+    color: white;
+}
+.music-types{
+    justify-content: left;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.music-type{
+    width: 25%;
+}
+.music-type>div{
+    margin: 0px 10px 10px 0;
+    overflow: hidden;   
+    position: relative;
+    border-radius: 15px;
+    color: white;
+    height:200px;
+    width: calc(100% - 10px);
+
+}
+.music-type>div img{
+    border-radius: 15px;
+    bottom: -10px;
+    right: -10px;
+    position: absolute;
+    width: 150px;
+    transform: rotate(45deg);
+}
+.music-type>div h1{
+    z-index: 1;
+    font-size: 45px;
+    padding: 0 0 60px 10px;
+}
+.show-music-type{
+    display: none;
+    width: 100%;
+}
+.show-music-type>h1{
+    background-image: url("img/Country.jpg") ;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    font-size: 60px;
+    padding: 100px 0 100px 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+.music-type-song,.songs{
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.song{
+    position: relative;
+    background-color: #878b8a;
+    margin: 0 5px 5px 0;
+    height: 200px;
+    width: calc(20% - 5px);
+}
+.song .img-song{
+    padding: 10px 10px 0 10px;
+    overflow: hidden;
+    height: calc(70% - 10px);
+    width: calc(100% - 20px);
+}
+.song .img-song img{
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+}
+.infosong{
+    box-sizing: border-box;
+    padding:10px 0 0 10px;
+    position: relative;
+    height: 30%;
+    width: 100%;
+}
+.menu-song{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.addpls{
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    bottom: 45px;
+    right: 25px;
+}  

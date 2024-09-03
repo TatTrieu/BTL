@@ -1,0 +1,78 @@
+.song:hover .img-song img{
+    transform: scale(1.2);
+}
+.songs .song{
+    background-color:  #6c6767;
+    position: relative;
+    height: 220px;
+    min-width: 190px;
+    width: 25%;
+    margin-right: 3px;
+    border-radius: 5px;
+}
+.song .img-song{
+    overflow: hidden;
+    width: calc(100% - 20px);
+    height: calc(80% - 10px);
+    margin: 10px 10px 0px 10px;
+}
+.song>.img-song>img{
+    transition: transform 1s;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.infosong{
+    width: calc(100% - 30px);
+    position: relative;
+    margin: 0px 10px 10px 10px ;
+    height: calc(20% - 10px);
+    padding: 2px;
+}
+.scrollright>img,.scrollleft>img{
+    width: 65%;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.scrollright,.scrollleft{
+    z-index: 1;
+    background-color: #838586;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    opacity: .5;
+}
+.scrollright{
+    position: absolute;
+    right: 5px;
+    transform: rotate(-90deg);
+}
+.scrollleft{
+    left: 5px;
+    position: absolute;
+    transform: rotate(90deg);
+}
+.songs::-webkit-scrollbar{
+    height: 0;
+}
+.songs{
+    border-bottom:1px solid rgb(133, 135, 135) ;
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+.menu-song{
+    position: absolute;
+    right: 5px;
+    bottom: 0px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.addpls{
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    bottom: 45px;
+    right: 25px;
+}  
