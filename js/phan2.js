@@ -60,8 +60,6 @@ window.addEventListener("load",function(){
 
 
     // chọn danh sách phát
-    // let playlist=document.querySelectorAll(".playlist")
-    // for(let pl of playlist)
         $(".right").on("click",".playlist",function(event){
             if ($(event.target).closest(".playall,playshuffle").length === 0){
                 $(".playlistsong").slideUp(500)

@@ -4,6 +4,7 @@ body{
     margin: 0;
 }
 h1,h2,h3,h4,h5,h6,p{
+    cursor: pointer;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -580,6 +581,65 @@ audio{
 /* .volmaxs:hover,.listens:hover{
     transform: scaleY(1.2);
 } */
+footer{
+    border-radius: 10px;
+    margin-bottom: 0;
+    height: 200px;
+    background-color: #423f3f;
+}
+.footer1{
+    padding: 20px;
+    display: flex;
+    height: 65%;
+
+}
+.company{
+    padding: 5px;
+    margin-left: 20px;
+}
+.company h2{
+    color: #1a1717 ;
+    margin-bottom: 5px;
+}
+.company a{
+    color: #807878;
+}
+.doitac{
+    margin-left: 100px;
+}
+.doitac h2{
+    text-align: center;
+    color: #1a1717 ;
+}
+.footer2{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    background-color: #423f3f;
+    bottom: 0;
+    height: 35%;
+}
+.footer2 a{
+    font-size: 1rem;
+    background-color: rgb(79, 78, 78);
+    padding: 4px;
+    border-radius: 20px;
+    margin-right: 30px;
+}
+.footer2 div p{
+    color: #1b1a1a;
+    font-size: 1rem;
+    margin-left: 5px;
+}
+.imgfooter{
+    margin-left: 250px;
+    width: auto;
+    height: 100%;
+}
+.imgfooter img{
+    width: 100px;
+    height: 90%;
+}
 
 
 

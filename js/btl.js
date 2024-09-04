@@ -417,14 +417,6 @@ window.onload=function(){
         $(".play-left .infosong p").text($(".song[playing='true'] p").text())
     }
     
-
-
-    // hover song
-    // $(".song").hover(function(){
-    //     $(this).animate({
-    //         "transform": "scale(1.2)"
-    //     },200)
-    // })
 }
 
 
