@@ -624,7 +624,7 @@ footer{
     background-color: rgb(79, 78, 78);
     padding: 4px;
     border-radius: 20px;
-    margin-right: 30px;
+    margin-right: 40px;
 }
 .footer2 div p{
     color: #1b1a1a;
@@ -632,7 +632,7 @@ footer{
     margin-left: 5px;
 }
 .imgfooter{
-    margin-left: 250px;
+    margin-left: 280px;
     width: auto;
     height: 100%;
 }
