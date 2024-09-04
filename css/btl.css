@@ -578,9 +578,6 @@ audio{
     background-color: aliceblue;
     border-radius: 50%; 
 }
-/* .volmaxs:hover,.listens:hover{
-    transform: scaleY(1.2);
-} */
 footer{
     border-radius: 10px;
     margin-bottom: 0;
