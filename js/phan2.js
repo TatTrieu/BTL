@@ -1,10 +1,13 @@
 window.addEventListener("load",function(){
     var Audio = document.getElementById("audio");
+
     function loadmusic(){
         $(".play-left .imgsong img").attr("src",$(".song[playing='true'] .img-song>img").attr("src"))
         $(".play-left .infosong h4").text($(".song[playing='true'] h4").text())
         $(".play-left .infosong p").text($(".song[playing='true'] p").text())
     }
+
+
     function next (obj){
         $(".song").attr("playing","false")
         $(obj).attr("playing","true")
@@ -13,6 +16,7 @@ window.addEventListener("load",function(){
         Audio.play()
         loadmusic()
     }
+    // lấy img của bài đầu tiên trong playlist làm ảnh mặc định
     function loadplaylist(){
         let playlist=document.querySelectorAll(".playlist")
         let playlistsong=document.querySelectorAll(".playlistsong")
@@ -43,7 +47,7 @@ window.addEventListener("load",function(){
         $(".song").removeClass("choiced")
         $(this).closest(".song").addClass("choiced")
     })
-
+    // thêm bài hát vào danh sách phát
     $(".addplaylist").on("click",".playlist-name h2",function(){
         $(".music .playlistsong").eq($(this).index()).append(`
             <div class="song">
@@ -101,7 +105,7 @@ window.addEventListener("load",function(){
                 }
                     
     })
-
+    // chọn đề xuất/của tôi
     $(".choice-playlist h1").click(function(){
         $(".choice-playlist h1").removeClass("on")
         $(this).addClass("on")
@@ -115,9 +119,10 @@ window.addEventListener("load",function(){
         $("div.my-playlist").slideDown()
     })
 
-
+    // thêm danh sách phát
     $("#namepl").change(function(){
         if($(this).val()!=""){
+            // thêm my-playlist
             $("div.my-playlist").append(`
                 <div class="playlist">
                     <div class="img-playlist">
@@ -135,12 +140,14 @@ window.addEventListener("load",function(){
                     </div>
                 </div>
                 `)
+            // thêm playlistsong
             $(".music").prepend(`
                 <div class="songs playlistsong">
                     <h1>${$(this).val()}</h1>
                 </div>    
                 `)
-            $(".playlist-name").append(`
+            // thêm tên playlist
+            $(".playlist-name").prepend(`
                 <h2>${$(this).val()}</h2>
                 `)
         }

@@ -4,9 +4,6 @@
 }
 
 .top{
-    /* background-image: url("img/Country.jpg") ;
-    background-repeat: no-repeat; 
-    background-size: cover; */
     margin: 10px 0 10px 0;
 }
 .img-top{
@@ -23,11 +20,52 @@
 .img-top::-webkit-scrollbar{
     display: none;
 }
-.songs:nth-child(1){
-    display: block;
+.show-topsinger{
+    display: none;
+}
+.topsong-topsinger{
+    display: flex;
+}
+.topsingers{
+    width: 30%;
+}
+.topsinger{
+    margin: 0 5px 5px 5px;
+    display: flex; 
+    align-items: center;
+    position: relative;
+    width: calc(100% - 10px);
+    height: 170px;
+    background-color: #6c6767;
+}
+.topsinger img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+}
+.topsinger h4{
+    font-size: 20px;
+    padding: 0 0 50px 10px;
+}
+.topsong>h1,.topsingers>h1{
+    font-size: 50px;
+    padding: 0 0 10px 10px;
+}
+.topsong .song>p{
+    text-align: center;
+    text-shadow: 5px 4px 3px #292828;
+    padding-left: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.search-namesong .songs,.search-singer .songs,.show-topsinger .songs{
+    width: 100%;
 }
 .songs{
-    width: 100% ;
+    width: 70% ;
 }
 .songs .song{
     position: relative;

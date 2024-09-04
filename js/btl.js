@@ -2,7 +2,7 @@ window.onload=function(){
     var Audio = document.getElementById("audio");
     add()
 
-    // thêm menu_song
+    // thêm menu_song,addpls
     function add(){
         let addpls=$(".song")
         let addplaysit=`
@@ -39,7 +39,6 @@ window.onload=function(){
             $(this).closest(".close").slideUp()
         })
     let searchtext=document.getElementById("searchtext")
-    // let searchbt=document.getElementById("searchbt")
     searchtext.onchange=function(){
         $("html").animate({scrollTop:0},500,function(){
             if(searchtext.value!==""){
@@ -138,7 +137,18 @@ window.onload=function(){
                         bt.style.display="block"
                 }
 
-                add()
+                let addpls=$(".search-show .song")
+                let addplaysit=`
+                    <div class="addpls">
+                        <div class="flex">
+                            <img src="https://img.icons8.com/ios-glyphs/50/FFFFFF/playlist--v1.png" alt="playlist--v1"/>
+                            <h6>Thêm vào danh sách phát</h6>
+                        </div>
+                    </div>
+                `
+                addpls.append(addplaysit)
+                $(".search-show .infosong").append('<button class="menu-song"><img src="https://img.icons8.com/ios-glyphs/50/FFFFFF/menu-2.png" alt="menu-2"/></button>')
+    
                                           
             }
         })
@@ -229,10 +239,8 @@ window.onload=function(){
         $(".menu").animate({
             "height": "60%"
         },500)
-        $(".music-types").css("margin-bottom", "80px")
-        $(".right .hotmusic:last-child").css("margin-bottom", "90px")
+        $("footer").css("margin-bottom", "140px")
         $(".playlists").css("margin-bottom", "80px")
-        $(".playlistsong .song:last-child").css("margin-bottom", "90px")
         playPause.src="https://img.icons8.com/ios-filled/50/FFFFFF/pause--v1.png"
         
         //quay cdlogo
@@ -402,7 +410,7 @@ window.onload=function(){
     function next (obj){
         $(".song").attr("playing","false")
         $(obj).attr("playing","true")
-        var x=`audio/${$(obj).find("h4").text()}_${$(obj).find("p").text()}.mp3`
+        var x=`audio/${$(obj).find(".infosong h4").text()}_${$(obj).find(".infosong p").text()}.mp3`
         $("#audio").attr("src",x)
         Audio.play()
         loadmusic()

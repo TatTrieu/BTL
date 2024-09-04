@@ -1,4 +1,5 @@
 window.addEventListener("load",function(){
+    // chọn music-type
     $(".music-type").click(function(){
         obj=this
         $("html").animate({scrollTop:0},500,function(){

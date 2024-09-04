@@ -88,7 +88,6 @@ div.my-playlist{
 .music{
     position: absolute;
     right: 0;
-    /* overflow-y: auto; */
     width:calc(55vw - 30px);
 }
 .playlistsong{
